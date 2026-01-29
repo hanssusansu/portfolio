@@ -106,7 +106,8 @@ section {
     padding: 6rem 2rem;
     position: relative;
     background-color: transparent !important;
-    /* Ensure transparency */
+    z-index: 1;
+    /* Bring content above background grid */
 }
 
 /* Remove alternating backgrounds to allow Grid/Glow to show */
