@@ -574,12 +574,16 @@ html {
     }
 
     section {
-        padding: 4rem 1rem;
-        /* Reduce padding */
+        padding: 3rem 1.5rem;
+        /* Reduce top/bottom padding to bring sections close, Increase left/right for safe area */
     }
 
     .content {
         width: 100%;
+        max-width: 100%;
+        /* Ensure content doesn't overflow */
+        padding: 0 0.5rem;
+        /* Extra internal padding */
     }
 
     /* 2. Navigation & Buttons */
@@ -597,7 +601,8 @@ html {
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        /* Reduce bottom padding */
         background: transparent;
     }
 
@@ -624,10 +629,19 @@ html {
     /* 4. Skills & Projects */
     .job-item {
         padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        /* Reduce margin between items */
     }
 
     .skills-list {
         gap: 0.5rem;
+        padding: 0 0.5rem;
+        /* Ensure skills don't touch edges */
+    }
+
+    .section-summary {
+        margin-bottom: 1.5rem;
+        /* Reduce space after summary */
     }
 
     /* 5. Modal */
