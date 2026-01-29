@@ -656,6 +656,12 @@ html {
     }
 
     /* 6. Contact */
+    #contact {
+        margin-top: 3rem;
+        /* Add specific spacing so it doesn't overlap */
+        padding-top: 4rem;
+    }
+
     .contact-icons {
         gap: 1.5rem;
     }
