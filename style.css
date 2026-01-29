@@ -574,8 +574,8 @@ html {
     }
 
     section {
-        padding: 4rem 1.5rem;
-        /* Standardized spacing for ALL sections */
+        padding: 6rem 1.5rem;
+        /* Increased spacing as requested */
         min-height: auto;
         /* Allow sections to shrink to fit content on mobile */
     }
