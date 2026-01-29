@@ -1,0 +1,641 @@
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    /* Deep dark base */
+    color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    /* For pseudo-elements */
+}
+
+/* Ambient Glow (Golden/Warm) - Intensified for visibility */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 15% 50%, rgba(230, 175, 46, 0.15), transparent 40%),
+        radial-gradient(circle at 85% 30%, rgba(230, 175, 46, 0.10), transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+    /* Changed from -2 to 0 to sit above body background but below content */
+}
+
+/* Technical Grid - Intensified for visibility */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: 50px 50px;
+    /* Grid size */
+    pointer-events: none;
+    z-index: 0;
+    /* Same layer as glow */
+    mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+}
+
+.top-buttons {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 1rem;
+    z-index: 1000;
+    /* High z-index to ensure clickability */
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid #333;
+    color: #888;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.lang-btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Resume Download Button - same style as About Button */
+.resume-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.resume-btn:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Section Layout */
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+    background-color: transparent !important;
+    /* Ensure transparency */
+}
+
+/* Remove alternating backgrounds to allow Grid/Glow to show */
+section:nth-child(odd) {
+    background-color: transparent;
+}
+
+section:nth-child(even) {
+    background-color: transparent;
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    /* Transition for smooth effects - faster as requested */
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, filter 0.3s ease-out;
+}
+
+/* Base state for all sections: Blurred and dimmed */
+.blur-effect .content {
+    opacity: 0.3;
+    transform: scale(0.9);
+    filter: blur(4px);
+}
+
+/* Active state: Clear, fully visible, and slightly enlarged */
+.in-focus .content {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: blur(0);
+}
+
+/* Placeholders */
+.profile-pic-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    position: relative;
+}
+
+.profile-pic-placeholder::after {
+    content: "Photo";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #888;
+    font-size: 0.8rem;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #333;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.section-summary {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    color: #eee;
+    /* Brighter than normal p */
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Component Styles */
+.job-item {
+    margin-bottom: 2rem;
+    transition: transform 0.2s, background 0.2s;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Card effect */
+}
+
+.job-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    /* Lighter on hover */
+}
+
+.edu-item {
+    margin-bottom: 2rem;
+    /* No background/hover for education as requested */
+}
+
+/* Specific Education Layout */
+.edu-item {
+    display: flex;
+    justify-content: center;
+    /* Center the group */
+    align-items: center;
+    text-align: left;
+    padding: 1rem;
+    gap: 1.5rem;
+    /* Space between text and logo */
+}
+
+/* .edu-text styles restored for alignment */
+.edu-text {
+    flex: 0 0 60%;
+    /* Fixed width relative to container */
+    text-align: left;
+    /* User requested left alignment */
+}
+
+.edu-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-left: 0;
+    background-color: #f0f0f0;
+    /* Light grey placeholder */
+    border-radius: 50%;
+    border: 2px solid #333;
+    /* Border to match theme */
+    padding: 2px;
+    /* Slight padding inside border */
+}
+
+/* Interactive Item Styles */
+.interactive-item {
+    cursor: pointer;
+    padding: 1rem;
+    /* Add some padding for better click area */
+}
+
+.interactive-item:hover {
+    /* bg handled by specific item classes now */
+    transform: translateY(-2px);
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    background: #222;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #eee;
+}
+
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.icon-link {
+    color: #fff;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    /* Slight background */
+}
+
+.icon-link:hover {
+    color: #E6AF2E;
+    /* Brand Gold */
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(230, 175, 46, 0.2);
+}
+
+.icon-link svg {
+    /* Ensure svg inherits color */
+    fill: currentColor;
+}
+
+/* Skills Interaction & Modal */
+.skill-tag {
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.skill-tag:hover {
+    background: #444;
+    transform: translateY(-2px);
+}
+
+.hint-text {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: #111;
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    /* Limit height to 80% of viewport */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content exceeds height */
+    text-align: center;
+    border: 1px solid #333;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.modal-content p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+    white-space: pre-line;
+    /* Preserve newlines from text */
+    text-align: left;
+    /* Better readability for long text */
+}
+
+/* Modal Images Gallery */
+.modal-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.modal-image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.modal-image-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.modal-image-caption {
+    font-size: 0.9rem;
+    color: #aaa;
+    text-align: center;
+    font-style: italic;
+}
+
+.modal-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+    border: 1px solid #fff;
+}
+
+.modal-btn:hover {
+    background-color: #ddd;
+    border-color: #ddd;
+    transform: translateY(-2px);
+}
+
+/* About Button */
+.about-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    /* Same color as Name (h1 is white) */
+    font-size: 1rem;
+    /* Same size as p */
+    font-weight: bold;
+    /* Bold */
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-family: inherit;
+}
+
+.about-btn:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Certificates */
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cert-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+    text-align: left;
+}
+
+.cert-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cert-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+.cert-item p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 0;
+}
+
+.cert-subtitle {
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #E6AF2E;
+    /* Gold */
+    border-left: 3px solid #E6AF2E;
+    padding-left: 0.8rem;
+}
+
+.side-nav {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    gap: 0.75rem;
+    z-index: 1000;
+}
+
+.side-nav a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.side-nav a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dashboard Button in Modal */
+.dashboard-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #E6AF2E;
+    /* Gold-ish color */
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.dashboard-btn:hover {
+    background-color: #d4a025;
+    color: #fff;
+}
+
+/* =========================================
+   Mobile Optimization (Max-Width: 768px)
+   ========================================= */
+@media screen and (max-width: 768px) {
+
+    /* 1. Global Typography & Layout */
+    html {
+        font-size: 14px;
+        /* Slightly smaller base size */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 4rem 1rem;
+        /* Reduce padding */
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* 2. Navigation & Buttons */
+    /* 2. Navigation & Buttons (Stacking for Mobile) */
+    .top-buttons {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        padding-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .side-nav {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+        background: transparent;
+    }
+
+    /* 3. Education Section (Stacking) */
+    .edu-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .edu-text {
+        text-align: center;
+        flex: auto;
+        width: 100%;
+    }
+
+    .edu-logo {
+        margin: 0 auto;
+        /* Center logo */
+        width: 100px;
+        height: 100px;
+    }
+
+    /* 4. Skills & Projects */
+    .job-item {
+        padding: 1.5rem;
+    }
+
+    .skills-list {
+        gap: 0.5rem;
+    }
+
+    /* 5. Modal */
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+        max-height: 85vh;
+    }
+
+    .modal-images {
+        gap: 1rem;
+    }
+
+    /* 6. Contact */
+    .contact-icons {
+        gap: 1.5rem;
+    }
+}
