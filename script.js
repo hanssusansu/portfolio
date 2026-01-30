@@ -38,6 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "蘇子恆",
             intro: "數位行銷/市場分析師 | 深耕於數位行銷市場分析及預測",
 
+            // Nav
+            nav_home: "首頁",
+            nav_edu: "學歷",
+            nav_exp: "專案",
+            nav_intern: "實習",
+            nav_skills: "專業技能",
+            nav_cert: "證照",
+            nav_contact: "聯絡",
+
             edu_title: "學歷",
 
             exp_title: "專案經驗",
