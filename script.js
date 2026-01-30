@@ -55,6 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
             exp_6_detail: `這個專案的誕生，源自於我想親自驗證一場正在發生的變革。我使用 Google 最新的 AI 開發環境 AntiGravity，從零開始打造了你現在看到的個人網站。對我來說，這不僅僅是為了建立一個存放作品集的空間，更是一場關於「Agentic Workflow（代理人工作流）的實戰實驗。我試圖去理解，當人工智慧不再只是被動的問答機器，而是能主動執行任務的代理人時，它將如何徹底改變我過去使用工具的模式，以及我解決問題的邏輯。
             在開發過程中，我並未將自己定位為傳統的程式開發者，而是轉身成為這名 AI 工程師的專案經理。我不需要親手敲打每一行程式碼，也不需要死記硬背繁瑣的語法，我的核心工作轉而變成了精準的指令下達與資源控管。就像在工廠管理產能一樣，我必須在 AntiGravity 有限的 Token 額度內，思考如何用最精簡的對話次數，換取最豐富的網頁功能與內容。每一次的 Prompt（提示詞），都像是一張發給產線的標準工單，指令下得越精確，產出的良率就越高，這讓我深刻體會到，在 AI 時代，「問對問題」的能力早已超越了「寫出答案」的能力。
             當然，過程中並非一帆風順，當排版跑掉或功能報錯時，我並沒有選擇接手重寫，而是堅持善用內建的 AI Agent 來進行除錯。我要求它不只修好錯誤，更要解釋錯誤發生的原因，讓我理解是哪一段語法邏輯產生了衝突。透過這種「指揮與反饋」的循環，我不僅成功排除了問題，更深入掌握了避免未來重複犯錯的關鍵。這段經歷讓我確信，未來的競爭力不在於誰能寫出最完美的程式碼，而在於誰能以最清晰的邏輯，指揮 AI 完成最複雜的任務。`,
+
+            // Images Captions (ZH)
+            exp_2_imgs: [
+                { "src": "files/images/機器學習模型預測結果.png", "caption": "機器學習模型預測結果績效比較" },
+                { "src": "files/images/W51 shap summary plot.png", "caption": "SHAP值解釋變數影響力 心臟內科" },
+                { "src": "files/images/W51 因子重要性.png", "caption": "因子重要性分析 心臟內科" }
+            ],
+
             skills_title: "專業技能",
             skills_summary: "我具備從市場洞察、資料視覺化到建構機器學習與 RAG 系統的端對端數據能力，為企業提供全方位的 AI 策略解決方案。",
             skill_1: "機器學習",
@@ -156,7 +164,13 @@ document.addEventListener('DOMContentLoaded', () => {
             這次實習很難量化，因為它更像一次把自己丟進系統裡的學習。
             我帶走的不是漂亮的數字，而是一種看事情的方式，從單點的工作走向整條流程的理解，從個人任務走向跨部門協作的節奏。
             也因為這趟經驗，我更確定自己所嚮往的，是不把人生鎖在安全範圍裡。
-            我追求的不是與眾不同本身，而是願意把自己放進真實世界，走進陌生的領域，承認落差存在，並用更謙卑、更踏實的方式，把需要的專業一點一滴補齊。`
+            我追求的不是與眾不同本身，而是願意把自己放進真實世界，走進陌生的領域，承認落差存在，並用更謙卑、更踏實的方式，把需要的專業一點一滴補齊。`,
+
+            intern_1_imgs: [
+                { "src": "files/images/golden1.JPG", "caption": "與老闆的合照~" },
+                { "src": "files/images/golden2.JPG", "caption": "與員工的合照~" },
+                { "src": "files/images/golden3.JPG", "caption": "在品管站體驗的我~" }
+            ]
         },
 
         en: {
@@ -204,6 +218,13 @@ document.addEventListener('DOMContentLoaded', () => {
             exp_6_detail: `The birth of this project stems from my desire to personally verify a revolution that is taking place. I used Google's latest AI development environment, AntiGravity, to build the personal website you see now from scratch. For me, this is not just to build a space to store my portfolio, but a practical experiment on "Agentic Workflow". I tried to understand how AI, when it is no longer just a passive Q&A machine but an agent that can actively perform tasks, will completely change my past patterns of using tools and my logic for solving problems.
             In the development process, I did not position myself as a traditional programmer, but turned into the project manager of this AI engineer. I didn't need to type every line of code by hand, nor did I need to memorize tedious syntax. My core work shifted to precise instruction giving and resource control. Just like managing production capacity in a factory, I had to think about how to exchange the fewest dialogue turns for the richest web functions and content within AntiGravity's limited Token quota. Every Prompt is like a standard work order issued to the production line; the more precise the instructions, the higher the yield rate. This made me deeply realize that in the AI era, the ability to "ask the right questions" has long surpassed the ability to "write the answers".
             Of course, the process was not smooth sailing. When the layout broke or functions reported errors, I did not choose to take over and rewrite it, but insisted on using the built-in AI Agent for debugging. I asked it not only to fix the error but also to explain the cause of the error, letting me understand which part of the syntax logic caused the conflict. Through this cycle of "command and feedback", I not only successfully eliminated problems but also deeply mastered the keys to avoiding future repetition of mistakes. This experience convinced me that future competitiveness lies not in who can write the most perfect code, but in who can command AI to complete the most complex tasks with the clearest logic.`,
+
+            // Images Captions (EN)
+            exp_2_imgs: [
+                { "src": "files/images/機器學習模型預測結果.png", "caption": "Comparison of Machine Learning Model Prediction Performance" },
+                { "src": "files/images/W51 shap summary plot.png", "caption": "SHAP Summary Plot - Cardiology" },
+                { "src": "files/images/W51 因子重要性.png", "caption": "Factor Importance Analysis - Cardiology" }
+            ],
 
             skills_title: "Skills",
             skills_summary: "Specialize in the end-to-end data analysis process, from market data collection, data cleaning, and visualization to machine learning modeling and strategic recommendations, with a specific focus on digital marketing and customer behavior analysis situations.",
@@ -306,7 +327,13 @@ document.addEventListener('DOMContentLoaded', () => {
             This internship is hard to quantify because it is more like learning to throw myself into the system.
             What I took away was not beautiful numbers, but a way of seeing things, moving from single-point work to understanding the entire process, and from personal tasks to the rhythm of cross-departmental collaboration.
             Also because of this experience, I am more certain that what I yearn for is not to lock my life in a safe range.
-            What I pursue is not being different itself, but being willing to put myself into the real world, walk into unfamiliar fields, admit the existence of gaps, and use a more humble and practical way to fill up the required professionalism bit by bit.`
+            What I pursue is not being different itself, but being willing to put myself into the real world, walk into unfamiliar fields, admit the existence of gaps, and use a more humble and practical way to fill up the required professionalism bit by bit.`,
+
+            intern_1_imgs: [
+                { "src": "files/images/golden1.JPG", "caption": "Photo with the Boss~" },
+                { "src": "files/images/golden2.JPG", "caption": "Photo with Staff~" },
+                { "src": "files/images/golden3.JPG", "caption": "Experiencing the QC Station~" }
+            ]
         }
     };
 
@@ -323,6 +350,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const descKey = item.getAttribute('data-desc-key');
             if (descKey && translations[lang] && translations[lang][descKey] != null) {
                 item.setAttribute('data-desc', translations[lang][descKey]);
+            }
+            // Update Data Images Captions
+            const imagesKey = item.getAttribute('data-images-key');
+            if (imagesKey && translations[lang] && translations[lang][imagesKey]) {
+                item.setAttribute('data-images', JSON.stringify(translations[lang][imagesKey]));
             }
         });
 
@@ -389,5 +421,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
 
