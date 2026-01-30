@@ -48,6 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_contact: "聯絡",
 
             edu_title: "學歷",
+            edu_1_school: "國立高雄科技大學",
+            edu_1_major: "運籌管理系日間部 學士",
+            edu_1_time: "2020 - 2023",
+            edu_2_school: "國立高雄科技大學",
+            edu_2_major: "金融系日間部 碩士",
+            edu_2_time: "2023 - 2025",
+            edu_3_school: "法國雷恩商學院",
+            edu_3_major: "數位行銷管理 碩士",
+            edu_3_time: "2025 - 2026",
 
             exp_title: "專案經驗",
             exp_1_role: "旗津渡輪生質能源票價策略研究",
@@ -88,8 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             【展望：準備好迎接挑戰】
             這段從台灣到法國的跨文化學習歷程，不僅磨練了我的程式撰寫能力，更讓我學會如何用數據說故事，成為技術團隊與商業決策者之間的橋樑。`,
             skill_2: "市場分析與資料視覺化",
-            skill_2_desc: `
-            在法國求學期間，我學會如何用 Python 與 TextBlob 分析 Amazon 上成千上萬條顧客評論，透過情感分析挖掘出哪些產品讓人喜愛、哪些細節引發不滿，再以 Power BI 將洞察視覺化呈現。接著在飯店訂房數據的專案中，我發現不同旅客群體有著截然不同的預訂習慣。這些經驗讓我深深著迷，原來數據背後藏著這麼多人性與行為的秘密，而我能用分析技術將它們一一揭開，轉化為有價值的市場洞察。
+            skill_2_desc: `在法國求學期間,我學會如何用 Python 與 TextBlob 分析 Amazon 上成千上萬條顧客評論,透過情感分析挖掘出哪些產品讓人喜愛、哪些細節引發不滿,再以 Power BI 將洞察視覺化呈現。接著在飯店訂房數據的專案中,我發現不同旅客群體有著截然不同的預訂習慣。這些經驗讓我深深著迷,原來數據背後藏著這麼多人性與行為的秘密,而我能用分析技術將它們一一揭開,轉化為有價值的市場洞察。
 
             除了學校的課程，我主動在 Udemy 修習 Power BI 專業課程，系統性地掌握了從資料串接、ETL (Extract, Transform, Load) 到高階 DAX 函數撰寫的完整技能。這段自主學習的經歷，讓我不僅能操作工具，更能理解商業智慧背後的資料架構邏輯。
             我擅長運用 Power BI 將分散的市場數據轉化為互動式儀表板。我重視資料的「可讀性」與「故事性」，確保報表不僅美觀，更能讓決策者在幾秒鐘內抓到重點。
@@ -251,7 +259,9 @@ document.addEventListener('DOMContentLoaded', () => {
             【Outlook: Ready for Challenges】
             This cross-cultural learning journey from Taiwan to France has not only honed my coding skills but also taught me how to tell stories with data, becoming a bridge between technical teams and business decision-makers.`,
             skill_2: "Market Analysis & Data Visualization",
-            skill_2_desc: `In addition to academic business training, I proactively took professional Power BI courses on Udemy, systematically mastering complete skills from data connection, ETL (Extract, Transform, Load) to advanced DAX function writing. This self-learning experience allowed me not only to operate tools but also to understand the data architecture logic behind business intelligence.
+            skill_2_desc: `During my studies in France, I learned how to use Python and TextBlob to analyze thousands of customer reviews on Amazon, using sentiment analysis to uncover which products people loved and which details caused dissatisfaction, then visualizing these insights with Power BI. In a hotel booking data project, I discovered that different traveler groups had vastly different booking habits. These experiences deeply fascinated me—I realized that data hides so many secrets about human nature and behavior, and I could use analytical techniques to unveil them one by one, transforming them into valuable market insights.
+
+            In addition to academic courses, I proactively took professional Power BI courses on Udemy, systematically mastering complete skills from data connection, ETL (Extract, Transform, Load) to advanced DAX function writing. This self-learning experience allowed me not only to operate tools but also to understand the data architecture logic behind business intelligence.
             I excel at using Power BI to transform scattered market data into interactive dashboards. I value the "Readability" and "Storytelling" of data, ensuring reports are not only beautiful but also allow decision-makers to grasp key points in seconds.
 
             Through Udemy professional courses and practical training, I possess the ability to develop interactive reports using Power BI:
