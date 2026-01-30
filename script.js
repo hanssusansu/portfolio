@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             【Outlook: Ready for Challenges】
             This cross-cultural learning journey from Taiwan to France has not only honed my coding skills but also taught me how to tell stories with data, becoming a bridge between technical teams and business decision-makers.`,
-            skill_2: "Data Analysis & Visualization",
+            skill_2: "Market Analysis & Data Visualization",
             skill_2_desc: `In addition to academic business training, I proactively took professional Power BI courses on Udemy, systematically mastering complete skills from data connection, ETL (Extract, Transform, Load) to advanced DAX function writing. This self-learning experience allowed me not only to operate tools but also to understand the data architecture logic behind business intelligence.
             I excel at using Power BI to transform scattered market data into interactive dashboards. I value the "Readability" and "Storytelling" of data, ensuring reports are not only beautiful but also allow decision-makers to grasp key points in seconds.
 
@@ -388,3 +388,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
