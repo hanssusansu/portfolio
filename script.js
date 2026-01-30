@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Of course, the process was not smooth sailing. When the layout broke or functions reported errors, I did not choose to take over and rewrite it, but insisted on using the built-in AI Agent for debugging. I asked it not only to fix the error but also to explain the cause of the error, letting me understand which part of the syntax logic caused the conflict. Through this cycle of "command and feedback", I not only successfully eliminated problems but also deeply mastered the keys to avoiding future repetition of mistakes. This experience convinced me that future competitiveness lies not in who can write the most perfect code, but in who can command AI to complete the most complex tasks with the clearest logic.`,
 
             skills_title: "Skills",
-            skills_summary: "I specialize in the end-to-end data analysis process, from market data collection, data cleaning, and visualization to machine learning modeling and strategic recommendations, with a specific focus on digital marketing and customer behavior analysis situations.",
+            skills_summary: "Specialize in the end-to-end data analysis process, from market data collection, data cleaning, and visualization to machine learning modeling and strategic recommendations, with a specific focus on digital marketing and customer behavior analysis situations.",
             skill_1: "Machine Learning",
             skill_1_desc: `【Origin: Inspiration from Data-Driven Decision Making】
             My data science journey began with the "Management Mathematics" course in university. At that time, how statistical probability could optimize management decisions deeply inspired me, and also made me decide to step out of my comfort zone and take the "Machine Learning" course in the College of Engineering with a business management background. To overcome the threshold of programming languages, I invested a lot of time delving into algorithm logic, eventually not only overcoming technical barriers but also cultivating the unique advantage of combining "Business Insight" and "Data Technology".
@@ -240,10 +240,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             about_btn: "About Me",
             about_desc: `Hello, I am Tzu-Heng Su.
-            My personality is steady and introverted. I am accustomed to thinking deeply about things I am interested in and clarifying the essence of problems in a structured way; at the same time, I am happy to step out of my comfort zone and actively explore the unknown and new methods.
-            After obtaining a bachelor's degree in Logistics Management in Taiwan, I chose to enter the Graduate Institute of Finance, expecting to extend from the practical operation of the supply chain to the valuation of the capital market; subsequently, in order to expand my understanding of the market side, I resolutely went to France to study Digital Marketing Management.
-            This series of choices stems from my curiosity about the full picture of business. I hope to combine logistics process thinking, rigorous financial logic, and marketing market insights to become a composite talent who can speak with data and assist enterprises in making precise decisions.
-            Outside of school, I am a person who loves solo travel. Using school holidays, I traveled alone throughout France; from itinerary planning to dealing with emergencies, solo travel not only satisfied my curiosity but also honed my ability to solve problems independently and adapt quickly. I believe that whether facing a strange city or a complex data project, as long as I remain open and continue learning, I can find a better solution.`,
+            My personality is defined by a balance of steady analysis and active exploration. I am accustomed to thinking deeply to clarify the essence of problems, but I am equally happy to embrace the unknown. This curiosity led me to build a diverse academic background. I started with Logistics Management in Taiwan, moved into Finance to understand capital valuation, and finally studied Digital Marketing Management in France to grasp market dynamics.
+
+            I aspire to be a multifaceted talent who can combine process efficiency, financial logic, and consumer insights. By speaking the language of data, I hope to assist enterprises in making precise and strategic decisions.
+
+            My adaptability extends beyond the classroom. As a solo traveler who has explored France extensively, I have learned to solve problems independently and navigate unfamiliar environments with confidence. Whether I am facing a strange city or a complex data project, I believe that staying open and continuously learning is the key to finding the best solution.`,
 
             cert_title: "Certificates & Proof of Ability",
 
@@ -388,4 +389,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
