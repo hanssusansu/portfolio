@@ -126,6 +126,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             resume_btn: "下載履歷",
 
+            intern_title: "實習經驗",
+            intern_1_title: "Golden Corporation Sdn Bhd｜廠務實習生",
+            intern_1_time: "2023年7月 - 2023年8月",
+
             intern1role: "Golden Corporation Sdn Bhd｜廠務實習生",
             intern1detail: `大三升大四那年暑假，為了踏出舒適圈，我選擇去到了汶萊實習。
             我本來就喜歡勇於嘗試，也喜歡走出跟別人不一樣的人生路線。
@@ -159,9 +163,33 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Tzu-Heng Su",
             intro: "Digital Marketing / Market Analyst | Specializing in Digital Marketing Market Analysis & Prediction",
 
+            // Nav
+            nav_home: "Home",
+            nav_edu: "Education",
+            nav_exp: "Projects",
+            nav_intern: "Internship",
+            nav_skills: "Skills",
+            nav_cert: "Certificates",
+            nav_contact: "Contact",
+
             edu_title: "Education",
+            edu_1_school: "National Kaohsiung University of Science and Technology",
+            edu_1_major: "B.S. in Logistics Management",
+            edu_1_time: "2020 - 2023",
+            edu_2_school: "National Kaohsiung University of Science and Technology",
+            edu_2_major: "M.S. in Finance",
+            edu_2_time: "2023 - 2025",
+            edu_3_school: "Rennes School of Business",
+            edu_3_major: "MSc in Digital Marketing Management",
+            edu_3_time: "2025 - 2026",
 
             exp_title: "Project Experience",
+            exp_1_time: "Jan 2023 – Dec 2023",
+            exp_2_time: "Sep 2024 – Jul 2025",
+            exp_3_time: "Sep 2025 – Oct 2025",
+            exp_4_time: "Sep 2025 – Dec 2025",
+            exp_5_time: "Dec 2025 – Present",
+            exp_6_time: "Jan 2026 – Present",
             exp_1_role: "Cijin Ferry Biofuel Pricing Strategy Research",
             exp_1_detail: "This project aimed to integrate the Theory of Planned Behavior (TPB) and Value-Belief-Norm Theory (VBN) to explore consumers' willingness to pay (WTP) for green products and CSR. The method employed the Contingent Valuation Method (CVM) for questionnaire design and used the Tobit model to correct data bias for precise estimation. The results confirmed that psychological factors and specific demographic characteristics (e.g., age, occupation) significantly affect WTP. It is suggested that enterprises and governments should target high-WTP groups to formulate differentiated pricing and marketing strategies, effectively transforming environmental value into market benefits.<br><br><a href=\"files/旗津渡輪生質能源票價研究.pdf\" target=\"_blank\" class=\"dashboard-btn\">View My Work</a>",
             exp_2_role: "Infectious Medical Waste Generation Prediction",
@@ -200,10 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
             1. Data Engineering: Proficient in Power Query (ETL) and multi-source data integration.
             2. Advanced Analysis: Using DAX functions to establish customized business metrics.
             3. Visual Storytelling: Skilled in designing user-centric interactive dashboards.`,
-            skill_3: "Digital Market Analysis",
-            skill_3_desc: "Familiar with using Python to write machine learning models for analysis and prediction, and able to use SQL syntax for data processing and analysis.",
-            skill_4: "Content Strategy",
-            skill_4_desc: "Formulate differentiated content according to different marketing channels (Social, EDM, Blog) to ensure consistency and diffusion of brand messaging.",
+            skill_3: "Building RAG Systems",
+            skill_3_desc: "Updating...",
+            skill_4: "AI Open Source Platform Application",
+            skill_4_desc: "Updating...",
 
             hint_text: "(Click for more info)",
 
@@ -244,6 +272,12 @@ document.addEventListener('DOMContentLoaded', () => {
             view_cert_btn: "View Certificate",
 
             resume_btn: "Download CV",
+
+            resume_btn: "Download CV",
+
+            intern_title: "Internship Experience",
+            intern_1_title: "Golden Corporation Sdn Bhd | Plant Intern",
+            intern_1_time: "Jul 2023 - Aug 2023",
 
             intern1role: "Golden Corporation Sdn Bhd | Plant Intern",
             intern1detail: `In the summer between my junior and senior years, to step out of my comfort zone, I chose to go to Brunei for an internship.
