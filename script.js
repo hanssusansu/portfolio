@@ -187,6 +187,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 { "src": "files/images/golden1.JPG", "caption": "與老闆的合照~" },
                 { "src": "files/images/golden2.JPG", "caption": "與員工的合照~" },
                 { "src": "files/images/golden3.JPG", "caption": "在品管站體驗的我~" }
+            ],
+
+            skill_2_imgs: [
+                { "src": "files/images/churned rate dashboard1.png", "caption": "使用Power BI建立的客戶流失率分析儀表板" },
+                { "src": "files/images/churned rate dashboard2.png", "caption": "使用Power BI key influencer分析哪個因素影響最大" },
+                { "src": "files/images/amazon dashboard.png", "caption": "使用Power BI建立Amazon評論分析儀表板" }
             ]
         },
 
@@ -352,6 +358,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 { "src": "files/images/golden1.JPG", "caption": "Photo with the Boss~" },
                 { "src": "files/images/golden2.JPG", "caption": "Photo with Staff~" },
                 { "src": "files/images/golden3.JPG", "caption": "Experiencing the QC Station~" }
+            ],
+
+            skill_2_imgs: [
+                { "src": "files/images/churned rate dashboard1.png", "caption": "Customer Churn Rate Analysis Dashboard built with Power BI" },
+                { "src": "files/images/churned rate dashboard2.png", "caption": "Using Power BI Key Influencer to analyze which factor has the greatest impact" },
+                { "src": "files/images/amazon dashboard.png", "caption": "Amazon Review Analysis Dashboard built with Power BI" }
             ]
         }
     };
