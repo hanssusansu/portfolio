@@ -5,10 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>個人履歷作品集</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_v2.css" />
 </head>
 
 <body>
+    <canvas id="bg-canvas"></canvas>
+
     <div class="top-buttons">
         <a id="resume-download" class="resume-btn" href="files/Chinese CV.pdf" download data-i18n="resume_btn">下載履歷</a>
         <button id="lang-switch" class="lang-btn" type="button">EN / 中</button>
@@ -32,23 +34,32 @@
         <a href="#contact" data-i18n="nav_contact">聯絡</a>
     </nav>
 
-    <main>
+    <main id="main-container">
         <!-- Hero Section -->
-        <section id="hero" class="blur-effect">
-            <div class="content">
-                <img src="files/images/photo2.jpg" alt="profile"
-                    style="width:150px;height:150px;border-radius:50%;object-fit:cover;margin-bottom:1.5rem;image-rendering:-webkit-optimize-contrast;" />
-                <h1 data-i18n="name"></h1>
-                <p data-i18n="intro"></p>
+        <section id="hero">
+            <div class="content hero-container">
+                <div class="hero-text-col">
+                    <p class="greeting">HELLO, I AM</p>
+                    <h1 data-i18n="name" class="brand-name"></h1>
+                    <div class="brand-line"></div>
+                    <p data-i18n="intro" class="brand-slogan"></p>
 
-                <button class="about-btn interactive-item" data-title-key="about_btn" data-desc-key="about_desc"
-                    data-i18n="about_btn" type="button"></button>
+                    <button class="about-btn interactive-item" data-title-key="about_btn" data-desc-key="about_desc"
+                        data-i18n="about_btn" type="button"></button>
+                </div>
+
+                <div class="hero-visual-col">
+                    <div class="image-wrapper">
+                        <img src="files/images/pic1.jpg" alt="profile" class="profile-img" />
+                        <div class="geometric-shape"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="blur-effect">
-            <div class="content">
+        <section id="education">
+            <div class="content tilt-card">
                 <h2 data-i18n="edu_title"></h2>
 
                 <div class="edu-item">
@@ -81,8 +92,8 @@
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="blur-effect">
-            <div class="content">
+        <section id="experience">
+            <div class="content tilt-card">
                 <h2 data-i18n="exp_title"></h2>
 
                 <div class="job-item interactive-item" data-title-key="exp_1_role" data-desc-key="exp_1_detail">
@@ -125,18 +136,22 @@
         </section>
 
         <!-- Internship Section -->
-        <section id="internship" class="blur-effect">
-            <div class="content">
+        <section id="internship">
+            <div class="content tilt-card">
                 <h2 data-i18n="intern_title">實習經驗</h2>
 
-                <div class="job-item interactive-item" data-title-key="intern1role" data-desc-key="intern1detail"
-                    data-images-key="intern_1_imgs" data-images='[
+                <div class="job-item interactive-item job-item-with-logo" data-title-key="intern1role"
+                    data-desc-key="intern1detail" data-images-key="intern_1_imgs" data-images='[
                       {"src": "files/images/golden1.JPG", "caption": "與老闆的合照~"},
                       {"src": "files/images/golden2.JPG", "caption": "與員工的合照~"},
                       {"src": "files/images/golden3.JPG", "caption": "在品管站體驗的我~"}
                     ]'>
-                    <h3 data-i18n="intern_1_title">Golden Corporation Sdn Bhd 廠務實習生</h3>
-                    <p data-i18n="intern_1_time">2023年7月 - 2023年8月</p>
+                    <div class="job-text">
+                        <h3 data-i18n="intern_1_title">Golden Corporation Sdn Bhd 廠務實習生</h3>
+                        <p data-i18n="intern_1_time">2023年7月 - 2023年8月</p>
+                    </div>
+                    <img src="files/images/golden_corporation_logo.jpg" class="company-logo"
+                        alt="Golden Corporation Logo" />
                 </div>
 
                 <p class="hint-text" data-i18n="hint_text"></p>
@@ -144,8 +159,8 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="blur-effect">
-            <div class="content">
+        <section id="skills">
+            <div class="content tilt-card">
                 <h2 data-i18n="skills_title"></h2>
                 <p class="section-summary" data-i18n="skills_summary"></p>
 
@@ -163,8 +178,8 @@
         </section>
 
         <!-- Certificates Section -->
-        <section id="certificates" class="blur-effect">
-            <div class="content">
+        <section id="certificates">
+            <div class="content tilt-card">
                 <h2 data-i18n="cert_title"></h2>
 
                 <div class="cert-list">
@@ -222,8 +237,8 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="blur-effect">
-            <div class="content">
+        <section id="contact">
+            <div class="content tilt-card">
                 <h2 data-i18n="contact_title"></h2>
 
                 <div class="contact-icons">
@@ -256,7 +271,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script_v2.js"></script>
 </body>
 
 </html>
